@@ -5,12 +5,13 @@
 */
 
 function isnumber(x) {
-  if (isNaN(Number(x)) || x === null) {
+  if (isNaN(Number(x)) || x === null || Number(x) <= 0) {
     return 1;
   } else {
     return Number(x);
   }
 }
+
 function showHaesMessage(numero) {
   let ArrH = [numero];
 
@@ -26,7 +27,7 @@ function showHaesMessage(numero) {
   const HaesArr = ArrH.join();
 
   const HaesMessage = `Последовательность: ${HaesArr}. Количество шагов: ${
-    ArrH.length
+    ArrH.length - 1
   }. Вершина: ${Math.max(...ArrH)}.`;
   alert(HaesMessage);
 }
