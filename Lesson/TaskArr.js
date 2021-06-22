@@ -10,7 +10,7 @@
 const RandomArr = new Array(7);
 
 for (let i = 0; i < 7; ) {
-  let randomNum = Math.round(Math.random() * 10);
+  let randomNum = Math.round(Math.random() * 11);
   if (RandomArr.indexOf(randomNum) === -1) {
     RandomArr[i] = randomNum;
     i++;
@@ -32,7 +32,7 @@ const RandomArr100Replace = new Array(10);
 
 function getRandomArray() {
   for (let i = 0; i < 10; ) {
-    let randomNum = Math.round(Math.random() * 100);
+    let randomNum = Math.round(Math.random() * 101);
     if (RandomArr100.indexOf(randomNum) === -1) {
       RandomArr100[i] = randomNum;
       i++;
