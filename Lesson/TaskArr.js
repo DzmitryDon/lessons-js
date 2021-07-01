@@ -11,16 +11,33 @@ const RandomArr = new Array(7);
 
 for (let i = 0; i < 7; ) {
   let randomNum = Math.round(Math.random() * 11);
+
+  /* console.time("Index");
+  Index(RandomArr, randomNum);
+  console.timeEnd("Index");
+
+  console.time("Incl");
+  Incl(RandomArr, randomNum);
+  console.timeEnd("Incl"); */
+
   if (RandomArr.indexOf(randomNum) === -1) {
     RandomArr[i] = randomNum;
     i++;
   }
 }
-console.log(RandomArr);
+
+function Index(Arr1, numb) {
+  return Arr1.indexOf(numb);
+}
+
+function Incl(Arr1, numb) {
+  return Arr1.includes(numb);
+}
+//console.log(RandomArr);
 RandomArr.sort(function compareNumbers(a, b) {
   return a - b;
 });
-console.log(RandomArr);
+//console.log(RandomArr);
 
 /* Создадим массив с десятью случайными элементами от 0 до 100;  
    Напишем инструкцию, которая будет заменять все “0” на строку “zero”;  
