@@ -7,7 +7,7 @@ anagram('hello', 'bye') --> false
 Анаграмма
 Слова являются анаграммами другого слова, если имеют одинаковые буквы в одинаковом количестве, но в разном порядке. */
 
-const sortWord = (str) => {
+/* const sortWord = (str) => {
   return str.replace(/\s+/g, "").toLowerCase().split("").sort().join("");
 };
 
@@ -37,7 +37,7 @@ function testAnagram() {
   testA("fi998877 hello world Dima", "F9i98787 Amid woldr llohe", true);
 }
 
-testAnagram();
+testAnagram(); */
 
 //const Test1 = anagram("finder", "Friend");
 //console.log(Test1);
@@ -49,12 +49,12 @@ testAnagram();
 findVowels('hello') // --> 2
 findVowels('why') // --> 0 */
 
-const CountStr = (str) => {
+/* export const CountStr = (str) => {
   const StrArr = str.match(/[aeiou]/gi);
   return StrArr === null ? 0 : StrArr.length;
 };
 
-const testCount = (word1, Answer) => {
+export const testCount = (word1, Answer) => {
   let textTest;
   if (CountStr(word1) === Answer) {
     textTest = `++ Слово  ${word1} посчитано верно`;
@@ -73,3 +73,19 @@ function testCountLetters() {
 }
 
 testCountLetters();
+ */
+export function fib(n) {
+  let a = 1;
+  let b = 1;
+  for (let i = 3; i <= n; i++) {
+    let c = a + b;
+    a = b;
+    b = c;
+  }
+  return b;
+}
+
+console.log(fib(3));
+/* alert( fib(3) ); // 2
+alert( fib(7) ); // 13
+alert(  fib(77) ); // 5527939700884757 */
