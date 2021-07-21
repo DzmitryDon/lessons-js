@@ -1,8 +1,0 @@
-#body {
-  background: #000 url(/src/img/sky.jpg) no-repeat center fixed;
-  background-size: cover;
-}
-
-.menu {
-  display: inline-block;
-}
