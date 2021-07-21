@@ -1,146 +1,15 @@
-function runCountry() {
-  let country = document.getElementById("countrySelect");
+/* import "./js/getSelect"; */
 
-  let valuecountry = country.options[country.selectedIndex].value;
+/*import { getCountrySity } from "./js/getSelect";
+getCountrySity(); */
 
-  //console.log(valuecountry); */
-  console.log(valuecountry);
-}
+/* import "./js/test.js";
+import { testa } from "./js/test"; */
 
-//const URL = "http://localhost:3033/users";
+/* import * as $ from "jquery";
 
-// async function showUsers() {
-//   const users = await getUsers();
-
-//   const usersNames = users.map((user) => user.name + "<br> ");
-//   document.getElementById("users").innerHTML = usersNames;
-//   console.dir(users);
-//   count();
-// }
-
-// async function getUsers() {
-//   const usersResp = await fetch(URL);
-//   const users = await usersResp.json();
-//   return users;
-// }
-
-// function count() {
-//   let i = 0;
-
-//   let start = Date.now();
-//   // делаем тяжёлую работу
-//   for (let j = 0; j < 1e10; j++) {
-//     i++;
-//   }
-
-//   console.log("Done in " + (Date.now() - start) + "ms");
-// }
-
-// count();
-
-// const updateData = async (id, name) => {
-//   const url = `${URL}/${id}`;
-//   try {
-//     const response = await fetch(url, {
-//       method: "PUT",
-//       body: JSON.stringify({ name }),
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//     });
-//     const json = await response.json();
-
-//     return json;
-//   } catch (error) {
-//     console.error("Ошибка:", error);
-//   }
-// };
-
-// const deleteData = async (id) => {
-//   const url = `${URL}/${id}`;
-//   try {
-//     const response = await fetch(url, {
-//       method: "DELETE",
-//     });
-//     const json = await response.json();
-
-//     return json;
-//   } catch (error) {
-//     console.error("Ошибка:", error);
-//   }
-// };
-
-/* const sheet = document.getElementById("sheet");
-
-const showUsers = async () => {
-  const usersPromise = fetch(URL);
-  usersPromise
-    .then((response) => response.json())
-    .then((users) => {
-      console.log(" file: index.js ~ line 91 ~ showUsers ~ users", users);
-      const arr = [];
-
-      users.forEach((i) => {
-        let userName = sheet.appendChild(document.createElement("p"));
-        userName.innerText = `${i.sendUser}`;
-      });
-
-    });
-};
-
-async function showUsers0() {
-  const response = await fetch(URL);
-  const users = await response.json();
-
-  const arOfNames = [];
-  for (const { name } of users) {
-    arOfNames.push(name);
-  }
-
-  const usersNames = users.map(({ name }) => name);
-}
-
-function delay(delayInms) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, delayInms);
-  });
-}
-
-
-
-function deleteData(id) {
-  fetch(`${URL}/${id}`, {
-    method: "DELETE",
-  }).then(() => {
-    console.log("remove");
-  });
-}
-
-document.getElementById("show").onclick = showUsers;
-
-document.getElementById("delete").onclick = () => {
-  for (let i = 8; i < 20; i++) {
-    deleteData(i);
-  }
-};
-
-document.getElementById("update").onclick = () =>
-  updateData(8, document.getElementById("input").value);
-
-async function updateData(id, newName) {
-  const updatedObj = {
-    id: id,
-    name: newName,
-  };
-  await fetch(`${URL}/${id}`, {
-    method: "PUT",
-    mode: "cors",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(updatedObj),
-  });
-}
- */
+import "./buttons/filter";
+import { createDeleteButton } from "./buttons/delete";
+export const USERS_URL = "http://localhost:3033/users";
+export let users;
+*/
